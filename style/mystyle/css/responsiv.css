@@ -1,0 +1,410 @@
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1390px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 576px) {
+
+    .ml-sm-5,
+    .mx-sm-5 {
+        margin-left: 0rem !important;
+    }
+
+}
+
+@media (max-device-width: 1023px) {
+    .navbar {
+        background: #F16136;
+        margin: 0 !important;
+    }
+}
+
+@media (max-width:2560px) and (min-width:1532px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width:1562px) and (min-width:1400px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+@media (max-width:1532px) and (min-width:1300px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .field-container {
+        width: 210px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .field-container {
+        width: 150px;
+    }
+}
+
+@media (max-width:1000px) and (min-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .xeberler_div {
+        margin-top: 40px;
+        width: 100%;
+        height: 500px;
+        background: #FFFFFF;
+        /* Shadow */
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+        border-radius: 4px;
+    }
+
+}
+
+@media (max-width:767px) and (min-width:300px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .xeberler_div {
+        margin-top: 40px;
+        width: auto;
+        height: auto;
+        background: #FFFFFF;
+        /* Shadow */
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+        border-radius: 4px;
+    }
+
+    .newss_p {
+        width: auto;
+    }
+}
+
+@media (max-width:425px) and (min-width:320px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .xeberler_div {
+        margin-top: 40px;
+        width: auto;
+        height: 500px;
+        background: #FFFFFF;
+        /* Shadow */
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .news-news {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1095px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
+    .container.navv {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-image {
+        width: 346px;
+        height: 208px;
+    }
+
+    .select-magazins-item {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .field-container {
+        width: 268px;
+    }
+
+    .list-magazine-items {
+        display: none;
+    }
+
+    .shop-category-all {
+        height: auto;
+        padding-bottom: 20px;
+        padding-left: 34px;
+    }
+
+    .shop-div-all {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .shop_title {
+        display: block;
+    }
+
+    .xeber-daxili-title {
+        width: 346px !important;
+        height: 88px;
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+
+        /* Main color */
+        color: #57606F;
+
+    }
+
+    .xeber-daxili-text {
+        /* Что такое Lorem Ipsum? Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum. Откуда он появился? Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э */
+        width: 346px;
+        height: 924px;
+        left: 15px;
+        top: 456px;
+
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2px;
+
+        /* Main color */
+        color: #57606F;
+
+    }
+
+    .faq-div-alls {
+        margin-top: 235px;
+    }
+
+    .faq-div-all {
+        margin-left: 3px;
+        width: 336px;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .faq-blog {
+        width: 350px;
+    }
+
+    .faq-div-all {
+        width: 330px;
+        margin-left: 0;
+    }
+
+    .xeberler_div {
+        margin-top: 40px;
+        width: auto;
+        height: 500px;
+        background: #FFFFFF;
+        /* Shadow */
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+        border-radius: 4px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .faq-blog {
+        width: 330px;
+    }
+
+    .faq-div-all {
+        width: 313px;
+        margin-left: 0;
+    }
+
+    .xeberler_div {
+        margin-top: 40px;
+        width: auto;
+        height: 500px;
+        background: #FFFFFF;
+        /* Shadow */
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+        border-radius: 4px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .ml-md-5,
+    .mx-md-5 {
+        margin-left: 0 !important;
+    }
+
+    .container.navv {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+}
+
+@media (max-width:767px) and (min-width:415px) {
+    .faq-blog {
+        margin-left: 50px;
+    }
+
+    .faq-div-alls {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width:1023px) and (min-width:768px) {
+    .faq-blog {
+        margin-left: 150px;
+    }
+
+    .faq-div-all {
+        width: 340px;
+        margin-left: 3px;
+    }
+
+    .faq-div-alls {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width:1179px) and (min-width:1024px) {
+    .faq-blog {
+        margin-left: 300px;
+    }
+
+    .faq-div-alls {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    body {
+        width: 345px;
+    }
+
+    .faq-blog {
+        width: 300px;
+    }
+
+    .faq-div-all {
+        width: 300px;
+    }
+
+    .faq-blog-text {
+        margin-top: 60px;
+    }
+
+}
+
+@media only screen and (max-device-width: 1024px) {
+    .container.navv .col-auto {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .container {
+        margin-left: 0;
+    }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .nav-logo {
+        height: 96px !important;
+        background-color: #F16136;
+        align-items: center;
+        margin: 0 !important;
+    }
+
+    /* .faq-blog {
+        margin-left: 250px;
+    } */
+
+    .users {
+        display: none !important;
+    }
+
+    .mobile-users {
+        display: flex !important;
+        color: white;
+    }
+}

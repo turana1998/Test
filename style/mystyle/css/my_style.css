@@ -1,0 +1,1048 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .container {
+    width: 95% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+} */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color-1 {
+    0% {
+        background-color: #eb73b9;
+    }
+
+    100% {
+        background-color: #17ead9;
+    }
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+::selection {
+    background: #6078ea;
+    color: white;
+    text-shadow: none;
+}
+
+::-webkit-selection {
+    background: #6078ea;
+    color: white;
+    text-shadow: none;
+}
+
+.field-container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    margin-top: 10px;
+    background: #FFFFFF;
+    /* Seperator color */
+    border: 1px solid #E7ECF2;
+    box-sizing: border-box;
+    border-radius: 2px;
+    width: 268px;
+    height: 40px;
+}
+
+.icons-container {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+
+.icon-close {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 75%;
+    height: 75%;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateX(-200%);
+    border-radius: 50%;
+    transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.icon-close:before {
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border: 2px solid transparent;
+    border-top-color: #6078ea;
+    border-left-color: #6078ea;
+    border-bottom-color: #6078ea;
+    transition: opacity 0.2s ease;
+}
+
+.icon-close .x-up {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.icon-close .x-up:before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 3px;
+    width: 50%;
+    height: 2px;
+    background-color: #6078ea;
+    transform: rotate(45deg);
+}
+
+.icon-close .x-up:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    right: 0px;
+    width: 50%;
+    height: 2px;
+    background-color: #6078ea;
+    transform: rotate(-45deg);
+}
+
+.icon-close .x-down {
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.icon-close .x-down:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    width: 50%;
+    height: 2px;
+    background-color: #6078ea;
+    transform: rotate(-45deg);
+}
+
+.icon-close .x-down:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 1px;
+    width: 50%;
+    height: 2px;
+    background-color: #6078ea;
+    transform: rotate(45deg);
+}
+
+.is-type .icon-close:before {
+    opacity: 1;
+    animation: spin 0.85s infinite;
+}
+
+.is-type .icon-close .x-up:before,
+.is-type .icon-close .x-up:after {
+    animation: color-1 0.85s infinite;
+}
+
+.is-type .icon-close .x-up:after {
+    animation-delay: 0.3s;
+}
+
+.is-type .icon-close .x-down:before,
+.is-type .icon-close .x-down:after {
+    animation: color-1 0.85s infinite;
+}
+
+.is-type .icon-close .x-down:before {
+    animation-delay: 0.2s;
+}
+
+.is-type .icon-close .x-down:after {
+    animation-delay: 0.1s;
+}
+
+.icon-search {
+    position: relative;
+    top: 5px;
+    left: 8px;
+    width: 40%;
+    height: 40%;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid #747D8C;
+    transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
+}
+
+.icon-search:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    right: -2px;
+    width: 2px;
+    border-radius: 3px;
+    transform: rotate(-45deg);
+    height: 10px;
+    background-color: #747D8C;
+}
+
+.field {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 14px;
+    background: white;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+
+    /* Second color */
+    color: #747D8C;
+
+}
+
+.field:focus {
+    outline: none;
+    box-shadow: 0px 9px 20px rgba(75, 72, 72, 0.3);
+}
+
+.field:focus+.icons-container .icon-close {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.field:focus+.icons-container .icon-search {
+    opacity: 0;
+    transform: translateX(200%);
+}
+
+.navbar {
+    height: 96px;
+    border-bottom: 1px solid #E7ECF2;
+}
+
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.08);
+    color: white !important;
+}
+
+.navbar-light .navbar-toggler {
+    padding-left: 11px;
+}
+
+.nav-logo {
+    width: 160px;
+    height: 112px;
+    background-color: #F16136;
+    border-radius: 0px 0px 8px 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-mobile {
+    height: 96px !important;
+    background-color: #F16136;
+    align-items: center;
+}
+
+.logo {
+    width: 128px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone-icon {
+    padding: 5px 0px 0 7px;
+    height: 32px;
+    background: #747D8C;
+    border-radius: 50%;
+    width: 32px;
+    color: white;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: 1px solid #E7ECF2;
+    margin: 0 0 0 11px;
+    width: 466px;
+}
+
+.menu-top {
+    display: flex;
+}
+
+.menu-top a {
+    text-decoration: none;
+    color: black;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.menu-bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 40px;
+}
+
+.menu-bottom a {
+    text-decoration: none;
+    color: black;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks_list {
+    display: inline-flex;
+    list-style: none;
+    margin: 0;
+}
+
+.social-networks_list a {
+    text-decoration: none;
+    color: #747D8C;
+}
+
+.social-networks_list--facebook {
+    margin-right: 13px;
+}
+
+.social-networks_list--instagram {
+    margin: 0 7px;
+}
+
+.social-networks_list--youtube {
+    margin: 0 7px;
+}
+
+.languages {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    margin-right: 9px;
+}
+
+.users {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 194px;
+    height: 48px;
+    border: 2px solid #747D8C;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+.mobile-users {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/*Haqqinda*/
+.haqqinda-title {
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.col-9_p {
+    /* Mapcargo, is an accredited NVOCC (Non-Vessel Operating Common Carrier), as a neutral we select best in class carriers offering unique fixed price contracts and flexibility. Our wealth of experience and in house purchase order management system provide detailed visibility and communication. Contracts with the worlds leading carriers gives our clients huge flexibility and cost savings, and a range of door to door services Bespoke services including buyers consols, FCL (Full Container Load), LCL (Less than Container Load), cost plus, supply chain management and other unique initiatives Total visibility though our in-house purchase order management software, (Boxtrax) which provides shipment tracking, vendor compliance and customised reports Our staff are second to none providing a highly skilled service to our most demanding of customers. */
+
+    margin-top: 40px;
+    height: 252px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.haqqinda-news {
+    position: absolute;
+    width: 300px;
+    height: 560px;
+
+    margin-top: 40px;
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+}
+
+.xeberler_div {
+    margin-top: 40px;
+    width: 840px;
+    height: 272px;
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+}
+
+.news-news {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+
+    margin-top: 40px;
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+}
+
+.image_p {
+
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    background: #CED6E0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.image_p {
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #747D8C;
+}
+
+.news_image {
+    /* Group 191 */
+
+    position: absolute;
+    width: 200px;
+    height: 160px;
+    margin: 20px 20px 0 10px;
+
+    background: #CED6E0;
+    border-radius: 4px;
+    padding: 40px;
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #747D8C;
+
+
+}
+
+.news_fb {
+    /* Rectangle 116 */
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 200px;
+
+    background: #4267B2;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+}
+
+.news_p {
+    /* ПОСТАВЛЕН ЗАПРЕТ НА ПЕРЕВОЗКУ МОБИЛЬНЫХ ТЕЛЕФОНОВ! */
+    width: 190px;
+    height: 60px;
+    margin-top: 20px;
+
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.news_h3 {
+    /* Where does it come from? */
+
+
+    width: 250px;
+    height: 14px;
+    margin-top: 20px;
+
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.newss_p {
+    /* There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sen... */
+
+
+    width: 636px;
+    height: 122px;
+    margin-top: 18px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+
+    /* Second color */
+    color: #747D8C;
+
+}
+
+.haqqinda-news_p {
+    /* Xəbərlər */
+
+    width: 223px;
+    height: 14px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    margin: 20px 0 0 10px;
+    /* Main color */
+    color: #57606F;
+
+}
+
+.news {
+    /* Rectangle 60 */
+
+    margin-top: 40px;
+    position: absolute;
+    width: 840px;
+    height: 272px;
+
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+
+}
+
+.news_btn {
+    /* Rectangle 58 */
+
+    width: 166px;
+    height: 48px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+    margin: 10px 10px 0 0;
+
+    /* Color */
+    background: #F16136;
+    border-radius: 2px;
+    /* DAVAMINI OXU */
+    /* Medium - 14px */
+    font-family: SF UI Text;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    color: #FFFFFF;
+}
+
+.main-image {
+    /* Rectangle 107 */
+    margin: auto;
+    margin-top: 20px;
+    width: 850px;
+    height: 512px;
+    background: #CED6E0;
+    border-radius: 4px;
+    /* IMAGE */
+
+
+    font-family: Product Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #747D8C;
+
+
+
+}
+
+.xeber-daxili-title {
+    /* ПОСТАВЛЕН ЗАПРЕТ НА ПЕРЕВОЗКУ МОБИЛЬНЫХ ТЕЛЕФОНОВ! */
+
+    position: absolute;
+    width: 1100px;
+    margin-top: 20px;
+    font-family: Kanit;
+    font-style: normal;
+    margin-left: 65px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.xeber-daxili-text {
+    /* ПОСТАВЛЕН ЗАПРЕТ НА ПЕРЕВОЗКУ МОБИЛЬНЫХ ТЕЛЕФОНОВ! */
+
+    width: 837px;
+    height: 16px;
+    margin: auto;
+    margin-top: 60px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    align-items: center;
+    letter-spacing: 0.2px;
+    text-align: justify;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.xeber-daxili-image {
+
+    /* Rectangle 107 */
+
+    position: absolute;
+    width: 250.78px;
+    height: 159px;
+    margin-left: 134px;
+    top: 820px;
+
+    background: #CED6E0;
+    border-radius: 4px;
+    text-align: center;
+
+}
+
+/* shop page */
+.shop-category-all {
+    /* Group 115 */
+
+
+    width: 300px;
+    height: 566px;
+    margin-top: 40px;
+
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+
+}
+
+.list-magazine-items {
+    margin-top: 20px;
+}
+
+.list-magazine-items ul {
+
+    list-style: none;
+    /* Remove HTML bullets */
+    padding: 0;
+    margin: 0;
+
+}
+
+.list-magazine-items ul li {
+    /* padding-left: 16px; */
+    margin-top: 5px;
+}
+
+.list-magazine-items ul li::before {
+    content: "•";
+    /* Insert content that looks like bullets */
+    /* padding-right: 8px; */
+    color: #57606F;
+    /* Or a color you prefer */
+}
+
+.category-shop-a span {
+    /* • Ətirlər */
+
+    /* margin-top: 10px; */
+    /* position: absolute; */
+    width: 223px;
+    height: 10px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* display: flex;
+    align-items: center; */
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+/* .shop-div {
+    width: 100%;
+    height: 230px;
+    border-radius: 20px;
+} */
+
+.shop-img {
+    /* 68bec0731dd046829abd31509a4dcc1f 1 */
+
+    /* position: absolute;
+    width: 142px;
+    height: 48px; */
+    display: block;
+    margin: auto;
+
+}
+
+.shop-div-all {
+    width: 200px;
+    height: 120px;
+    background-color: white;
+    margin-top: 40px;
+    position: relative;
+    /* Group 116 */
+    /* width: 217px;
+    height: 120px; */
+
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 13px;
+
+    background: url(68bec0731dd046829abd31509a4dcc1f.png);
+
+}
+
+.shop-div-all:hover .middle {
+    opacity: 1;
+}
+
+.shop-div-all:hover .shop-div {
+    opacity: 0.7;
+}
+
+.shop-div-all:hover .shop-text {
+    display: none;
+}
+
+.shop-div-all:hover .shop-miles {
+    display: none;
+}
+
+
+
+.shop-div-all:hover {
+    -webkit-box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
+    transition: all .2s ease-in-out;
+}
+
+.shop-text {
+    font-family: 'Poppins', sans-serif;
+    color: gray;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.shop-miles {
+    color: #008CCC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* class applies to select element itself, not a wrapper element */
+
+.select-country {
+    margin-top: 20px;
+}
+
+.select-magazins-item {
+    display: none;
+}
+
+.shop_title {
+    display: none;
+    /* MAĞAZALAR */
+
+    position: absolute;
+    width: 321px;
+    height: 22px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.select-css {
+    /* Group 113 */
+    /* White */
+
+    background: #FFFFFF;
+    /* Seperator color */
+    border: 1px solid #E7ECF2;
+    box-sizing: border-box;
+    border-radius: 2px;
+
+
+    background-image: url('../img/arrow-down.png'),
+        linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right .7em top 50%, 0 0;
+    /* icon size, then gradient */
+    background-size: 1.40em auto, 100%;
+
+    display: block;
+
+    color: #444;
+    height: 40px;
+    padding: .6em 1.4em .5em .8em;
+    width: 268px;
+    max-width: 100%;
+    /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.select-css option {
+    /* Bütün ölkələr */
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.faq-blog {
+    /* Rectangle 121 */
+
+    position: absolute;
+    width: 370px;
+    height: 152px;
+    top: 60px;
+
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+
+}
+
+.faq-div-alls {
+    margin-top: 40px;
+}
+
+.faq-div-all {
+    /* Rectangle 47 */
+
+    width: 365px;
+    height: 48px;
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.faq-text {
+    /* 1000 ABŞ dolları limiti nədir? */
+
+    position: absolute;
+    width: 226px;
+    height: 12px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.faq-title {
+    /* TEZ-TEZ VERİLƏN SUALLAR */
+    height: 16px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 20px;
+    /* Color */
+    color: #F16136;
+
+}
+
+.faq-blog-text {
+    /* BLOQ */
+
+    height: 16px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-top: 30px;
+    /* Main color */
+    color: #57606F;
+
+}
+
+/* Set options to normal weight */
