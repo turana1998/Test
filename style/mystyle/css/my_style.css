@@ -27,6 +27,19 @@
     }
 }
 
+.col-xl-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xl-5ths {
+    width: 20%;
+    float: left;
+}
+
 .row {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -212,7 +225,7 @@
     background: white;
     border-radius: 3px;
     transition: all 0.4s ease;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -307,7 +320,7 @@ hr {
 .menu-top a {
     text-decoration: none;
     color: black;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -323,7 +336,7 @@ hr {
 .menu-bottom a {
     text-decoration: none;
     color: black;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -408,7 +421,7 @@ span {
 
     margin-top: 40px;
     height: 252px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -527,7 +540,7 @@ span {
     height: 60px;
     margin-top: 20px;
 
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -549,7 +562,7 @@ span {
     height: 14px;
     margin-top: 20px;
 
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -570,7 +583,7 @@ span {
     width: 636px;
     height: 122px;
     margin-top: 18px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -589,7 +602,7 @@ span {
 
     width: 223px;
     height: 14px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -676,7 +689,7 @@ span {
     position: absolute;
     width: 1100px;
     margin-top: 20px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     margin-left: 65px;
     font-weight: 500;
@@ -697,7 +710,7 @@ span {
     height: 16px;
     margin: auto;
     margin-top: 60px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -777,7 +790,7 @@ span {
     /* position: absolute; */
     width: 223px;
     height: 10px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -897,7 +910,7 @@ span {
     position: absolute;
     width: 321px;
     height: 22px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -947,7 +960,7 @@ span {
 
 .select-css option {
     /* Bütün ölkələr */
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1002,7 +1015,7 @@ span {
     position: absolute;
     width: 226px;
     height: 12px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -1017,7 +1030,7 @@ span {
 .faq-title {
     /* TEZ-TEZ VERİLƏN SUALLAR */
     height: 16px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -1033,7 +1046,7 @@ span {
     /* BLOQ */
 
     height: 16px;
-    font-family: Kanit;
+    font-family: 'Kanit', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -1045,4 +1058,261 @@ span {
 
 }
 
-/* Set options to normal weight */
+.tarifler_title {
+    /* ÖLKƏLƏR ÜZRƏ TARİFLƏRİMİZ */
+    width: 630px;
+    height: 22px;
+    margin: auto;
+    margin-top: 50px;
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.olkeler {
+    /* Group 223 */
+    width: 1011px;
+    height: 48px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.turkiye {
+    /* Group 208 */
+
+    width: 181px;
+    height: 48px;
+    /* Rectangle 40 */
+    /* Color */
+    background: #F16136;
+    border-radius: 4px;
+
+
+    /* Rectangle 39 */
+
+
+
+    font-family: "Kanit";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* White */
+    color: #FFFFFF;
+
+}
+
+.container.olkelerr {
+    max-width: 1060px;
+}
+
+.olke {
+    width: 181px;
+    height: 48px;
+    display: flex;
+
+
+
+}
+
+
+.olke p {
+    /* İngiltərə */
+    width: 92px;
+    height: 16px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Second color */
+    color: #747D8C;
+
+}
+
+.olke {
+    /* Rectangle 39 */
+
+    width: 181px;
+    height: 48px;
+
+    background: #FFFFFF;
+    /* Color */
+    border: 1px solid #F16136;
+    box-sizing: border-box;
+    /* S */
+    box-shadow: 0px 0px 12px rgba(241, 97, 54, 0.48);
+    border-radius: 4px;
+}
+
+.tariflerr {
+    /* Tarif_1 */
+    width: 600px;
+    height: 393px;
+
+    margin-top: 40px;
+
+
+    /* White */
+    background: #FFFFFF;
+    /* Shadow */
+    box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
+    border-radius: 4px;
+
+
+
+
+
+
+
+    /* 0.501 kq-dan 0.75 kq-a qədər */
+
+    /* position: absolute;
+    width: 183px;
+    height: 10px;
+    left: 99px;
+    top: 499px; */
+
+    /* font-family: San Francisco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center; */
+
+    /* Main color */
+
+    /* $4.85 */
+
+    /* position: absolute;
+    width: 39px;
+    height: 10px;
+    left: 642px;
+    top: 499px;
+s
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center; */
+
+    /* Main color */
+    /* color: #57606F; */
+
+
+    /*    
+    position: absolute;
+    width: 598px;
+    height: 1px;
+    left: 91px;
+    top: 482px;
+
+    border: 1px dashed #E7ECF2;
+    box-sizing: border-box; */
+
+
+}
+
+.tariflerr table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tariflerr table tr {
+    margin-left: 20px;
+}
+
+.tariflerr table td {
+
+    /* 1.001 kq-dan 10 kq-a qədər hər kq üçün */
+    /* width: 243px;
+    height: 10px; */
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    align-items: center;
+    /* Main color */
+    color: #57606F;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px dotted #ddd;
+
+}
+
+.container.tarif {
+    max-width: 1200px;
+}
+
+.tariflerr_h4 {
+    /* Title */
+
+
+    /* Standart tariflər */
+    width: 111px;
+    height: 12px;
+
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+
+    /* Main color */
+    color: #57606F;
+
+}
+
+.tariflerr_h4 svg {
+
+
+    /* White */
+    background: #FFFFFF;
+    /* Color */
+    border: 1px solid #F16136;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin-left: 3px;
+
+
+
+}
+
+.tariflerr_hr {
+    /* seperator */
+    width: 580px;
+    height: 1px;
+    margin-top: 30px;
+
+
+    /* Seperator color */
+    background: #E7ECF2;
+
+}
